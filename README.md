@@ -1,5 +1,5 @@
 # Persian Eliza
-Persian ELIZA: a very basic rogerian psychotherapist chatbot in Persian
+A very basic rogerian psychotherapist chatbot in Persian
 
 ## About Eliza
 This early natural language processing program had been written in the mid-1960s at the MIT Artificial Intelligence Laboratory by Joseph Weizenbaum. It supposedly had been created to demonstrate how superficial human to computer communications was at that time. But, when it was put on personal computers, humans found it quite engaging.

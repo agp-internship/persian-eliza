@@ -301,12 +301,11 @@ key: چه
     reasmb: وقتی این سوال را می پرسی چه چیزی به ذهنت می آید ؟
     reasmb: این سوال را قبلا نپرسیده بودی ؟
     reasmb: آیا از شخص دیگری هم سوال کردی ؟
-key: because
+key: زیرا
   decomp: *
-    reasmb: Is that the real reason ?
-    reasmb: Don't any other reasons come to mind ?
-    reasmb: Does that reason seem to explain anything else ?
-    reasmb: What other reasons might there be ?
+    reasmb: آیا این یک دلیل منطقی است ؟
+    reasmb: دلیل دیگری به ذهنت نمی آید ؟
+    reasmb: چه دلایل دیگری داری ؟
 key: why
   decomp: * why don't you *
     reasmb: Do you believe I don't (2) ?

@@ -327,12 +327,11 @@ key: nobody 2
 key: noone 2
   decomp: *
     reasmb: goto everyone
-key: always 1
+key: همیشه 1
   decomp: *
-    reasmb: Can you think of a specific example ?
-    reasmb: When ?
-    reasmb: What incident are you thinking of ?
-    reasmb: Really, always ?
+    reasmb: امکانش هست یک نمونه مثال بیاوری ؟
+    reasmb: چه زمانی ؟
+    reasmb: وقعا؟ همیشه ؟
 key: alike 10
   decomp: *
     reasmb: In what way ?

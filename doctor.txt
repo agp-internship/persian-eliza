@@ -34,7 +34,6 @@ post: i you
 post: you I
 post: my your
 post: i'm you are
-synon: متاسفم شرمنده
 synon: belief feel think believe wish
 synon: family mother mom father dad sister brother wife children child
 synon: desire want need
@@ -307,26 +306,14 @@ key: چرا
     reasmb: goto چه
   decomp: *
     reasmb: goto چه
-key: everyone 2
-  decomp: * @everyone *
-    reasmb: Realy, (2) ?
-    reasmb: Surely not (2) .
-    reasmb: Can you think of anyone in particular ?
-    reasmb: Who, for example?
-    reasmb: Are you thinking of a very special person ?
-    reasmb: Who, may I ask ?
-    reasmb: Someone special perhaps ?
-    reasmb: You have a particular person in mind, don't you ?
-    reasmb: Who do you think you're talking about ?
-key: everybody 2
-  decomp: *
-    reasmb: goto everyone
-key: nobody 2
-  decomp: *
-    reasmb: goto everyone
-key: noone 2
-  decomp: *
-    reasmb: goto everyone
+key: همه 2
+  decomp: * همه *
+    reasmb: واقعا (2) ؟
+    reasmb: مطمئنا این طور نیست که (2)
+    reasmb: آیا می توانی یک فرد خاص را مثال بزنی ؟
+    reasmb: امکانش هست بپرسم چه کسی ؟
+    reasmb: در مورد چه کسی صحبت می کنی ؟
+    reasmb: مثلا چه کسی ؟
 key: همیشه 1
   decomp: *
     reasmb: امکانش هست یک نمونه مثال بیاوری ؟

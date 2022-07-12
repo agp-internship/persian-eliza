@@ -63,12 +63,12 @@ key: فکر 5
     reasmb: در حال حاضر چه چیزی از (2) به یاد داری ؟
     reasmb: ارتباط بین من و (2) چیست ؟
 key: یاد 5
-  decomp: آیا * را به یاد داری
+  decomp: آیا * را به یاد داری *
     reasmb: فکر می کنید من (1) را فراموش می کنم ؟
     reasmb: چرا فکر کردی ممکن است من (1) را فراموش کنم ؟
     reasmb: درباره (1) خبر داری ؟
     reasmb: goto what
-    reasmb: اسم (1) را آوردی ؟
+    reasmb: اسم (1) را نیاور
 key: اگر 3
   decomp: * اگر *
     reasmb: آیا واقعا فکر می کنید که ممکن است (2) ؟
@@ -290,17 +290,17 @@ key: can
     reasmb: Do you want to be able to (2) ?
     reasmb: Perhaps you don't want to (2) .
     reasmb: goto what
-key: what
+key: چه
   decomp: *
-    reasmb: Why do you ask ?
-    reasmb: Does that question interest you ?
-    reasmb: What is it you really wanted to know ?
-    reasmb: Are such questions much on your mind ?
-    reasmb: What answer would please you most ?
-    reasmb: What do you think ?
-    reasmb: What comes to mind when you ask that ?
-    reasmb: Have you asked such questions before ?
-    reasmb: Have you asked anyone else ?
+    reasmb: چرا این سوال را می پرسی ؟
+    reasmb: آیا این سوال برای تو مهم است ؟
+    reasmb: دقیقا می خواهی چه چیزی را متوجه شوی ؟
+    reasmb: آیا مشابه این سوالات در ذهنت زیاد است ؟
+    reasmb: چه جوابی تو را خوشحال می کند ؟
+    reasmb: خودت چی فکر می کنی ؟
+    reasmb: وقتی این سوال را می پرسی چه چیزی به ذهنت می آید ؟
+    reasmb: این سوال را قبلا نپرسیده بودی ؟
+    reasmb: آیا از شخص دیگری هم سوال کردی ؟
 key: because
   decomp: *
     reasmb: Is that the real reason ?

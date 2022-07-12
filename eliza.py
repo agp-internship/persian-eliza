@@ -58,7 +58,7 @@ class Eliza:
                 elif tag == 'post':
                     parts = content.split(' ')
                     self.posts[parts[0]] = parts[1:]
-                elif tag == 'مترادف':
+                elif tag == 'synon':
                     parts = content.split(' ')
                     self.synons[parts[0]] = parts
                 elif tag == 'key':

@@ -21,6 +21,10 @@ pre: were was
 pre: you're you are
 pre: i'm i am
 pre: same alike
+post: هستم هستید
+post: هستید هستم
+post: من تو
+post: تو من
 post: am are
 post: your my
 post: me you
@@ -40,15 +44,14 @@ synon: everyone everybody nobody noone
 synon: be am is are was
 key: xnone
   decomp: *
-    reasmb: I'm not sure I understand you fully.
-    reasmb: Please go on.
-    reasmb: What does that suggest to you ?
-    reasmb: Do you feel strongly about discussing such things ?
+    reasmb: متوجه منظورتان نمی شوم
+    reasmb: لطفا از این موضوع عبور کنید
+    reasmb: منظورتان از این حرف چه بود؟
 key: sorry
   decomp: *
-    reasmb: Please don't apologise.
-    reasmb: Apologies are not necessary.
-    reasmb: I've told you that apologies are not required.
+    reasmb: لطفا عذرخواهی نکنید
+    reasmb: نیازی به معذرت خواهی نیست
+    reasmb: به شما گفتم که هیچ ضرورتی به عذرخواهی وجود ندارد
 key: apologise
   decomp: *
     reasmb: goto sorry
@@ -114,10 +117,10 @@ key: espanol
 key: xforeign
   decomp: *
     reasmb: I speak only English.
-key: hello
+key: سلام
   decomp: *
-    reasmb: How do you do.  Please state your problem.
-    reasmb: Hi.  What seems to be your problem ?
+    reasmb: سلام. خوشحال می شوم که با هم گفتگو کنیم
+    reasmb: حالتون خوب است؟ چه کمکی از دست من بر می آید؟
 key: computer 50
   decomp: *
     reasmb: Do computers worry you ?

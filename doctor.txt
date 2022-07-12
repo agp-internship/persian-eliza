@@ -34,6 +34,7 @@ post: i you
 post: you I
 post: my your
 post: i'm you are
+synon: ناراحت غمگین افسرده
 synon: belief feel think believe wish
 synon: family mother mom father dad sister brother wife children child
 synon: desire want need
@@ -159,22 +160,20 @@ key: بودم 2
 key: بودی 2
   decomp: * آیا * بودی
     reasmb: دوست داری که فکر کنی من (2) بودم ؟
-    reasmb: اینکه من (2) بودم چه چیزی را نشان می دهد ؟
-    reasmb: تو چی فکر می کنی ؟
+    reasmb: اینکه من (2) بودم چه چیزی را نشان میدهد ؟
+    reasmb: تو چی فکر میکنی ؟
     reasmb: شاید من (2) بوده باشم
-key: i
-  decomp: * i @desire *
-    reasmb: What would it mean to you if you got (3) ?
-    reasmb: Why do you want (3) ?
-    reasmb: Suppose you got (3) soon ?
-    reasmb: What if you never got (3) ?
-    reasmb: What would getting (3) mean to you ?
-    reasmb: What does wanting (3) have to do with this discussion ?
-  decomp: * i am * @sad *
-    reasmb: I am sorry to hear that you are (3) .
-    reasmb: Do you think that coming here will help you not to be (3) ?
-    reasmb: I'm sure it's not pleasant to be (3) .
-    reasmb: Can you explain what made you (3) ?
+key: من
+  decomp: * من * میخواهم *
+    reasmb: چرا (2) میخواهی ؟
+    reasmb: فرض کن به زودی (2) خواهی داشت
+    reasmb: اگر تو هرگز (2) نداشته باشی چه می شود ؟
+    reasmb: گرفتن (2) چه معنایی برای تو دارد ؟
+    reasmb: اینکه تو (2) میخواهی چه ربطی به صحبت ما دارد ؟
+  decomp: * من @ناراحت هستم *
+    reasmb: بسیار متاسفم که می شنوم تو (2) هستی
+    reasmb: آیا فکر می کنی آمدن به اینجا کمک می کند (2) نباشی ؟
+    reasmb: می توانی توضیح بدهی که چرا (2) هستی ؟
   decomp: * i am * @happy *
     reasmb: How have I helped you to be (3) ?
     reasmb: Has your treatment made you (3) ?

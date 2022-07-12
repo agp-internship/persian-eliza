@@ -270,17 +270,17 @@ key: my 2
     reasmb: Why do you say your (2) ?
     reasmb: Does that suggest anything else which belongs to you ?
     reasmb: Is it important that your (2) ?
-key: can
-  decomp: * can you *
-    reasmb: You believe I can (2) don't you ?
-    reasmb: goto what
-    reasmb: You want me to be able to (2) .
-    reasmb: Perhaps you would like to be able to (2) yourself.
-  decomp: * can i *
-    reasmb: Whether or not you can (2) depends on you more than me.
-    reasmb: Do you want to be able to (2) ?
-    reasmb: Perhaps you don't want to (2) .
-    reasmb: goto what
+key: می توانی
+  decomp: * آیا می توانی *
+    reasmb: تو فکر می کنی من می توانم (2). نه ؟
+    reasmb: goto چه
+    reasmb: تو از من می خوای که بتوانم (2) ؟
+    reasmb: شاید هم تو می خواهی که خودت بتوانی (2) ؟
+key: می توانم
+  decomp: * آیا می توانم *
+    reasmb: این که بتوانی (2) یا نتوانی به خودت بستگی دارد نه من
+    reasmb: آیا می خواهی که بتوانی (2) ؟
+    reasmb: goto چه
 key: چه
   decomp: *
     reasmb: چرا این سوال را می پرسی ؟

@@ -319,16 +319,18 @@ key: همیشه 1
     reasmb: امکانش هست یک نمونه مثال بیاوری ؟
     reasmb: چه زمانی ؟
     reasmb: وقعا؟ همیشه ؟
-key: alike 10
+key: مثل 10
   decomp: *
-    reasmb: In what way ?
-    reasmb: What resemblence do you see ?
-    reasmb: What does that similarity suggest to you ?
-    reasmb: What other connections do you see ?
-    reasmb: What do you suppose that resemblence means ?
-    reasmb: What is the connection, do you suppose ?
-    reasmb: Could here really be some connection ?
-    reasmb: How ?
+    reasmb: از چه نظر ؟
+    reasmb: چه شباهتی بین آنها می بینی ؟
+    reasmb: چرافکر می کنی آنها شبیه هستند ؟
+    reasmb: چگونه ؟
+key: مانند 10
+  decomp: *
+    reasmb: goto مثل
+key: شبیه 10
+  decomp: *
+    reasmb: goto مثل
 key: like 10
   decomp: * @be * like *
     reasmb: goto alike

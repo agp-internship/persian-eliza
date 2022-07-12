@@ -1,5 +1,5 @@
-initial: خوش آمدید ! مشکل خود را بگویید
-final: به امید دیدار ! از گفتگو با شما بسیار لذت بردم
+initial: خوش آمدی ! مشکلت را بگو
+final: به امید دیدار ! از گفتگو با تو بسیار لذت بردم
 quit: خدانگه دار
 quit: خدا نگه دار
 quit: خداحافظ
@@ -44,31 +44,31 @@ synon: everyone everybody nobody noone
 synon: be am is are was
 key: xnone
   decomp: *
-    reasmb: متوجه منظورتان نمی شوم
-    reasmb: لطفا از این موضوع عبور کنید
-    reasmb: منظورتان از این حرف چه بود؟
+    reasmb: متوجه منظورت نمی شوم
+    reasmb: لطفا از این موضوع عبور کن
+    reasmb: منظورت از این حرف چه بود؟
 key: sorry
   decomp: *
-    reasmb: لطفا عذرخواهی نکنید
+    reasmb: لطفا عذرخواهی نکن
     reasmb: نیازی به معذرت خواهی نیست
-    reasmb: به شما گفتم که هیچ ضرورتی به عذرخواهی وجود ندارد
+    reasmb: به تو گفتم که هیچ ضرورتی به عذرخواهی وجود ندارد
 key: apologise
   decomp: *
     reasmb: goto sorry
-key: remember 5
-  decomp: * من یادآوری می کنم *
+key: فکر 5
+  decomp: * به * فکر می کنم
     reasmb: آیا معمولا به (2) فکر می کنی ؟
-    reasmb: Does thinking of (2) bring anything else to mind ?
-    reasmb: What else do you recollect ?
-    reasmb: Why do you recollect (2) just now ?
-    reasmb: What in the present situation reminds you of (2) ?
-    reasmb: What is the connection between me and (2) ?
-  decomp: * do you remember *
-    reasmb: Did you think I would forget (2) ?
-    reasmb: Why do you think I should recall (2) now ?
-    reasmb: What about (2) ?
+    reasmb: آیا فکر کردن به (2) چیزی را به خاطرت نمی آورد ؟
+    reasmb: دیگر به چه چیزهایی فکر می کنی ؟
+    reasmb: در حال حاضر چه چیزی از (2) به یاد داری ؟
+    reasmb: ارتباط بین من و (2) چیست ؟
+key: یاد 5
+  decomp: آیا * را به یاد داری
+    reasmb: فکر می کنید من (1) را فراموش می کنم ؟
+    reasmb: چرا فکر کردی ممکن است من (1) را فراموش کنم ؟
+    reasmb: درباره (1) خبر داری ؟
     reasmb: goto what
-    reasmb: You mentioned (2) ?
+    reasmb: اسم (1) را آوردی ؟
 key: اگر 3
   decomp: * اگر *
     reasmb: آیا واقعا فکر می کنید که ممکن است (2) ؟

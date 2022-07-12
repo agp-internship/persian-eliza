@@ -148,24 +148,21 @@ key: your
     reasmb: What about your own (2) ?
     reasmb: Are you worried about someone else's (2) ?
     reasmb: Really, my (2) ?
-key: was 2
-  decomp: * was i *
-    reasmb: What if you were (2) ?
-    reasmb: Do you think you were (2) ?
-    reasmb: Were you (2) ?
-    reasmb: What would it mean if you were (2) ?
-    reasmb: What does (2) suggest to you ?
+key: بودم 2
+  decomp: * آیا * بودم
+    reasmb: اگر واقعا (2) باشی چه ؟
+    reasmb: آیا فکر می کنی (2) بودی ؟
     reasmb: goto چه
-  decomp: * i was *
-    reasmb: Were you really ?
-    reasmb: Why do you tell me you were (2) now ?
-    reasmb: Perhaps I already know you were (2) .
-  decomp: * was you *
-    reasmb: Would you like to believe I was (2) ?
-    reasmb: What suggests that I was (2) ?
-    reasmb: What do you think ?
-    reasmb: Perhaps I was (2) .
-    reasmb: What if I had been (2) ?
+  decomp: * من * بودم
+    reasmb: جدی (2) بودی ؟
+    reasmb: چرا الان به من می گویی که تو (2) بودی ؟
+    reasmb: شاید من از قبل می دانستم که تو (2) بودی
+key: بودی 2
+  decomp: * آیا * بودی
+    reasmb: دوست داری که فکر کنی من (2) بودم ؟
+    reasmb: اینکه من (2) بودم چه چیزی را نشان می دهد ؟
+    reasmb: تو چی فکر می کنی ؟
+    reasmb: شاید من (2) بوده باشم
 key: i
   decomp: * i @desire *
     reasmb: What would it mean to you if you got (3) ?

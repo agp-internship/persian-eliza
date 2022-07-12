@@ -87,10 +87,13 @@ key: شاید
     reasmb: به نظر می رسد مطمئن نیستی
     reasmb: چرا اطمینان نداری ؟
     reasmb: مطمئن نیستی ؟
-key: name 15
+key: نام 15
   decomp: *
-    reasmb: I am not interested in names.
-    reasmb: I've told you before, I don't care about names -- please continue.
+    reasmb: من به نام علاقه ندارم
+    reasmb: من خیلی به اسم و نام اهمیت نمی دهم
+key: اسم 15
+  decomp: *
+    reasmb: goto نام
 key: english
   decomp: *
     reasmb: goto xforeign

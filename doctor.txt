@@ -82,13 +82,11 @@ key: آرزو 4
   decomp: *
     reasmb: آیا آرزو های زیادی داری ؟
     reasmb: چه افرادی در رویا های تو ظاهر می شوند ؟
-key: perhaps
+key: شاید
   decomp: *
-    reasmb: You don't seem quite certain.
-    reasmb: Why the uncertain tone ?
-    reasmb: Can't you be more positive ?
-    reasmb: You aren't sure ?
-    reasmb: Don't you know ?
+    reasmb: به نظر می رسد مطمئن نیستی
+    reasmb: چرا اطمینان نداری ؟
+    reasmb: مطمئن نیستی ؟
 key: name 15
   decomp: *
     reasmb: I am not interested in names.

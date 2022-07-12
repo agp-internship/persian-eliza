@@ -34,6 +34,7 @@ post: i you
 post: you I
 post: my your
 post: i'm you are
+synon: متاسفم شرمنده
 synon: belief feel think believe wish
 synon: family mother mom father dad sister brother wife children child
 synon: desire want need
@@ -47,7 +48,7 @@ key: xnone
     reasmb: متوجه منظورت نمی شوم
     reasmb: لطفا از این موضوع عبور کن
     reasmb: منظورت از این حرف چه بود؟
-key: sorry
+key: متاسفم
   decomp: *
     reasmb: لطفا عذرخواهی نکن
     reasmb: نیازی به معذرت خواهی نیست
@@ -67,7 +68,7 @@ key: یاد 5
     reasmb: فکر می کنید من (1) را فراموش می کنم ؟
     reasmb: چرا فکر کردی ممکن است من (1) را فراموش کنم ؟
     reasmb: درباره (1) خبر داری ؟
-    reasmb: goto what
+    reasmb: goto چه
     reasmb: اسم (1) را نیاور
 key: اگر 3
   decomp: * اگر *
@@ -97,25 +98,29 @@ key: name 15
   decomp: *
     reasmb: I am not interested in names.
     reasmb: I've told you before, I don't care about names -- please continue.
+key: english
+  decomp: *
+    reasmb: goto xforeign
+    reasmb: قبلا به تو گفته بودم. من به زبان انگلیسی مسلط نیستم
 key: deutsch
   decomp: *
     reasmb: goto xforeign
-    reasmb: I told you before, I don't understand German.
+    reasmb: قبلا گفته بودم. من به زبان آلمانی مسلط نیستم
 key: francais
   decomp: *
     reasmb: goto xforeign
-    reasmb: I told you before, I don't understand French.
+    reasmb: از قبل گفته بودم که من به زبان فرانسوی مسلط نیستم
 key: italiano
   decomp: *
     reasmb: goto xforeign
-    reasmb: I told you before, I don't understand Italian.
+    reasmb: قبلا گفته بودم. من به زبان ایتالیایی مسلط نیستم
 key: espanol
   decomp: *
     reasmb: goto xforeign
-    reasmb: I told you before, I don't understand Spanish.
+    reasmb: قبلا گفته بودم. من به زبان اسپانیایی مسلط نیستم
 key: xforeign
   decomp: *
-    reasmb: I speak only English.
+    reasmb: من فقط به فارسی صحبت می کنم
 key: سلام
   decomp: *
     reasmb: سلام. خوشحال می شوم که با هم گفتگو کنیم
@@ -134,7 +139,7 @@ key: am
     reasmb: Would you want to be (2) ?
     reasmb: Do you wish I would tell you you are (2) ?
     reasmb: What would it mean if you were (2) ?
-    reasmb: goto what
+    reasmb: goto چه
   decomp: *
     reasmb: Why do you say 'am' ?
     reasmb: I don't understand that.
@@ -144,7 +149,7 @@ key: are
     reasmb: Would you prefer if I weren't (2) ?
     reasmb: Perhaps I am (2) in your fantasies.
     reasmb: Do you sometimes think I am (2) ?
-    reasmb: goto what
+    reasmb: goto چه
   decomp: * are *
     reasmb: Did you think they might not be (2) ?
     reasmb: Would you like it if they were not (2) ?
@@ -163,7 +168,7 @@ key: was 2
     reasmb: Were you (2) ?
     reasmb: What would it mean if you were (2) ?
     reasmb: What does (2) suggest to you ?
-    reasmb: goto what
+    reasmb: goto چه
   decomp: * i was *
     reasmb: Were you really ?
     reasmb: Why do you tell me you were (2) now ?

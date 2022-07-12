@@ -21,8 +21,8 @@ pre: were was
 pre: you're you are
 pre: i'm i am
 pre: same alike
-post: هستم هستید
-post: هستید هستم
+post: هستم هستی
+post: هستی هستم
 post: من تو
 post: تو من
 post: am are
@@ -306,21 +306,18 @@ key: زیرا
     reasmb: آیا این یک دلیل منطقی است ؟
     reasmb: دلیل دیگری به ذهنت نمی آید ؟
     reasmb: چه دلایل دیگری داری ؟
-key: why
-  decomp: * why don't you *
-    reasmb: Do you believe I don't (2) ?
-    reasmb: Perhaps I will (2) in good time.
-    reasmb: Should you (2) yourself ?
-    reasmb: You want me to (2) ?
-    reasmb: goto what
-  decomp: * why can't i *
-    reasmb: Do you think you should be able to (2) ?
-    reasmb: Do you want to be able to (2) ?
-    reasmb: Do you believe this will help you to (2) ?
-    reasmb: Have you any idea why you can't (2) ?
-    reasmb: goto what
+key: چرا
+  decomp: * چرا تو *
+    reasmb: نو فکر می کنی من (2) ؟
+    reasmb: goto چه
+  decomp: * چرا من نمی توانم *
+    reasmb: چرا فکر می کنی تو نمی توانی (2) ؟
+    reasmb: آیا واقعا می خواهی که بتوانی (2) ؟
+    reasmb: فکر می کنی اینکه بتوانی (2) به تو کمک می کند ؟
+    reasmb: به نظرت چرا نمی توانی (2) ؟
+    reasmb: goto چه
   decomp: *
-    reasmb: goto what
+    reasmb: goto چه
 key: everyone 2
   decomp: * @everyone *
     reasmb: Realy, (2) ?

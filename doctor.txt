@@ -218,27 +218,25 @@ key: i
     reasmb: Can you elaborate on that ?
     reasmb: Do you say (1) for some special reason ?
     reasmb: That's quite interesting.
-key: you
-  decomp: * you remind me of *
-    reasmb: goto alike
-  decomp: * you are *
-    reasmb: What makes you think I am (2) ?
-    reasmb: Does it please you to believe I am (2) ?
-    reasmb: Do you sometimes wish you were (2) ?
-    reasmb: Perhaps you would like to be (2) .
-  decomp: * you * me *
-    reasmb: Why do you think I (2) you ?
-    reasmb: You like to think I (2) you -- don't you ?
-    reasmb: What makes you think I (2) you ?
-    reasmb: Really, I (2) you ?
-    reasmb: Do you wish to believe I (2) you ?
-    reasmb: Suppose I did (2) you -- what would that mean ?
-    reasmb: Does someone else believe I (2) you ?
-  decomp: * you *
-    reasmb: We were discussing you -- not me.
-    reasmb: Oh, I (2) ?
-    reasmb: You're not really talking about me -- are you ?
-    reasmb: What are your feelings now ?
+key: تو
+  decomp: * تو من را یاد * می اندازی
+    reasmb: goto مثل
+  decomp: * تو * هستی
+    reasmb: چه چیزی تو را به این باور انداخت که من (2) هستم ؟
+    reasmb: اگر دوست داری فکر کن که من (2) هستم
+    reasmb: آیا گاهی آرزو می کنی که (2) بودی ؟
+    reasmb: شاید تو خودت دوست داری (2) باشی ؟
+  decomp: * تو من را *
+    reasmb: چرا فکر می کنی من تو را (2) ؟
+    reasmb: تو دوست داری که فکر کنی من تو را (2) . نه ؟
+    reasmb: چه چیزی تو را به این باور انداخت که من تو را (2) ؟
+    reasmb: واقعا ؟ من تو را (2) ؟
+    reasmb: آیا شخص دیگری نیز فکر می کند که من تو را (2) ؟
+  decomp: * تو *
+    reasmb: ما در مورد تو صحبت می کنیم . نه من
+    reasmb: اوه من (2) ؟
+    reasmb: تو که وقعا در مورد من صحبت نمی کنی ؟
+    reasmb: الان نسبت به من چه حسی داری ؟
 key: دارم
   decomp: * دارم
     reasmb: از کی (1) داری ؟
@@ -277,7 +275,7 @@ key: my 2
     reasmb: Is it important that your (2) ?
 key: میتوانی
   decomp: * آیا میتوانی *
-    reasmb: تو فکر می کنی من می توانم (2) نه ؟
+    reasmb: تو فکر می کنی من می توانم (2) . نه ؟
     reasmb: goto چه
     reasmb: تو از من می خوای که بتوانم (2) ؟
     reasmb: شاید هم تو می خواهی که خودت بتوانی (2) ؟
@@ -330,8 +328,8 @@ key: همیشه 1
 key: مثل 10
   decomp: *
     reasmb: از چه نظر ؟
-    reasmb: چه شباهتی بین آنها می بینی ؟
-    reasmb: چرافکر می کنی آنها شبیه هستند ؟
+    reasmb: چه شباهتی در این بین می بینی ؟
+    reasmb: چرافکر می کنی شبیه هستند ؟
     reasmb: چگونه ؟
 key: مانند 10
   decomp: *

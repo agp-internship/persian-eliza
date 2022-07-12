@@ -4,8 +4,10 @@ import re
 from collections import namedtuple
 
 # Fix Python2/Python3 incompatibility
-try: input = raw_input
-except NameError: pass
+try:
+    input = raw_input
+except NameError:
+    pass
 
 log = logging.getLogger(__name__)
 
@@ -44,11 +46,11 @@ class Eliza:
                 if not line.strip():
                     continue
                 tag, content = [part.strip() for part in line.split(':')]
-                if tag == 'آغاز':
+                if tag == 'initial':
                     self.initials.append(content)
-                elif tag == 'پایان':
+                elif tag == 'final':
                     self.finals.append(content)
-                elif tag == 'انصراف':
+                elif tag == 'quit':
                     self.quits.append(content)
                 elif tag == 'pre':
                     parts = content.split(' ')
@@ -56,7 +58,7 @@ class Eliza:
                 elif tag == 'post':
                     parts = content.split(' ')
                     self.posts[parts[0]] = parts[1:]
-                elif tag == 'synon':
+                elif tag == 'مترادف':
                     parts = content.split(' ')
                     self.synons[parts[0]] = parts
                 elif tag == 'key':
@@ -178,7 +180,6 @@ class Eliza:
         text = re.sub(r'\s*:+\s*', ' : ', text)
         text = re.sub(r'\s*،+\s*', ' ، ', text)
         text = re.sub(r'\s*؛+\s*', ' ؛ ', text)
-        
         log.debug('After punctuation cleanup: %s', text)
 
         words = [w for w in text.split(' ') if w]
@@ -219,7 +220,7 @@ class Eliza:
         print(self.initial())
 
         while True:
-            sent = input('> ')
+            sent = input()
 
             output = self.respond(sent)
             if output is None:
@@ -234,6 +235,7 @@ def main():
     eliza = Eliza()
     eliza.load('doctor.txt')
     eliza.run()
+
 
 if __name__ == '__main__':
     logging.basicConfig()

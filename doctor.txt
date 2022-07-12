@@ -35,6 +35,7 @@ post: you I
 post: my your
 post: i'm you are
 synon: ناراحت غمگین افسرده
+synon: خوشحال شاد سرحال
 synon: belief feel think believe wish
 synon: family mother mom father dad sister brother wife children child
 synon: desire want need
@@ -174,11 +175,9 @@ key: من
     reasmb: بسیار متاسفم که می شنوم تو (2) هستی
     reasmb: آیا فکر می کنی آمدن به اینجا کمک می کند (2) نباشی ؟
     reasmb: می توانی توضیح بدهی که چرا (2) هستی ؟
-  decomp: * i am * @happy *
-    reasmb: How have I helped you to be (3) ?
-    reasmb: Has your treatment made you (3) ?
-    reasmb: What makes you (3) just now ?
-    reasmb: Can you explan why you are suddenly (3) ?
+  decomp: * من @خوشحال هستم *
+    reasmb: چه چیزی تو را (2) کرده است ؟
+    reasmb: آیا رفتارت تو را (2) کرده است ؟
   decomp: * i was *
     reasmb: goto was
   decomp: * i @belief * i *
@@ -186,7 +185,7 @@ key: من
     reasmb: But you are not sure you (3) .
     reasmb: Do you really doubt you (3) ?
   decomp: * i * @belief * you *
-    reasmb: goto you
+    reasmb: goto تو
   decomp: * i am *
     reasmb: Is it because you are (2) that you came to me ?
     reasmb: How long have you been (2) ?

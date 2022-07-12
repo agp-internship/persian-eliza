@@ -135,21 +135,13 @@ key: هستم
     reasmb: دلت می خواهد (2) باشی ؟
     reasmb: دوست داری من تو را (2) صدا بزنم ؟
     reasmb: goto چه
-  decomp: *
-    reasmb: Why do you say 'am' ?
-    reasmb: I don't understand that.
-key: are
-  decomp: * are you *
-    reasmb: Why are you interested in whether I am (2) or not ?
-    reasmb: Would you prefer if I weren't (2) ?
-    reasmb: Perhaps I am (2) in your fantasies.
-    reasmb: Do you sometimes think I am (2) ?
+key: هستی
+  decomp: * آیا * هستی
+    reasmb: چرا علاقمندی که بدانی من (2) هستم یا خیر ؟
+    reasmb: ترجیح می دهی من (2) باشم ؟
+    reasmb: شاید من در خیال تو (2) هستم
+    reasmb: واقعا گاهی فکر می کنی من (2) هستم ؟
     reasmb: goto چه
-  decomp: * are *
-    reasmb: Did you think they might not be (2) ?
-    reasmb: Would you like it if they were not (2) ?
-    reasmb: What if they were not (2) ?
-    reasmb: Possibly they are (2) .
 key: your
   decomp: * your *
     reasmb: Why are you concerned over my (2) ?

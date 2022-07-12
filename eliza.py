@@ -178,7 +178,7 @@ class Eliza:
         text = re.sub(r'\s*:+\s*', ' : ', text)
         text = re.sub(r'\s*،+\s*', ' ، ', text)
         text = re.sub(r'\s*؛+\s*', ' ؛ ', text)
-        # TODO: insert other punctuation cleanup
+        
         log.debug('After punctuation cleanup: %s', text)
 
         words = [w for w in text.split(' ') if w]

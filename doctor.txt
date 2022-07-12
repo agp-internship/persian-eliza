@@ -1,8 +1,9 @@
-initial: How do you do.  Please tell me your problem.
-final: Goodbye.  Thank you for talking to me.
-quit: bye
-quit: goodbye
-quit: quit
+آغاز: خوش آمدید! مشکل خود را بگویید. 
+پایان: خیلی ممنون. از گفتگو با شما بسیار لذت بردم.
+انصراف: خدانگه دار
+انصراف: خداحافظ
+انصراف: انصراف
+انصراف: به امید دیدار
 pre: dont don't
 pre: cant can't
 pre: wont won't

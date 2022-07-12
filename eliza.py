@@ -39,16 +39,16 @@ class Eliza:
     def load(self, path):
         key = None
         decomp = None
-        with open(path) as file:
+        with open(path, encoding='utf-8') as file:
             for line in file:
                 if not line.strip():
                     continue
                 tag, content = [part.strip() for part in line.split(':')]
-                if tag == 'initial':
+                if tag == 'آغاز':
                     self.initials.append(content)
-                elif tag == 'final':
+                elif tag == 'پایان':
                     self.finals.append(content)
-                elif tag == 'quit':
+                elif tag == 'انصراف':
                     self.quits.append(content)
                 elif tag == 'pre':
                     parts = content.split(' ')
@@ -175,6 +175,7 @@ class Eliza:
         text = re.sub(r'\s*\.+\s*', ' . ', text)
         text = re.sub(r'\s*,+\s*', ' , ', text)
         text = re.sub(r'\s*;+\s*', ' ; ', text)
+        # TODO: insert other punctuation like clone
         log.debug('After punctuation cleanup: %s', text)
 
         words = [w for w in text.split(' ') if w]

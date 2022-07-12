@@ -239,6 +239,11 @@ key: you
     reasmb: Oh, I (2) ?
     reasmb: You're not really talking about me -- are you ?
     reasmb: What are your feelings now ?
+key: دارم
+  decomp: * دارم
+    reasmb: از کی (1) داری ؟
+    reasmb: آیا در اطرافیان کسی (1) دارد ؟
+    reasmb: چرا (1) داری ؟
 key: بله
   decomp: *
     reasmb: به نظر می آید تقریبا موافق هستی
@@ -270,14 +275,14 @@ key: my 2
     reasmb: Why do you say your (2) ?
     reasmb: Does that suggest anything else which belongs to you ?
     reasmb: Is it important that your (2) ?
-key: می توانی
-  decomp: * آیا می توانی *
-    reasmb: تو فکر می کنی من می توانم (2). نه ؟
+key: میتوانی
+  decomp: * آیا میتوانی *
+    reasmb: تو فکر می کنی من می توانم (2) نه ؟
     reasmb: goto چه
     reasmb: تو از من می خوای که بتوانم (2) ؟
     reasmb: شاید هم تو می خواهی که خودت بتوانی (2) ؟
-key: می توانم
-  decomp: * آیا می توانم *
+key: میتوانم
+  decomp: * آیا میتوانم *
     reasmb: این که بتوانی (2) یا نتوانی به خودت بستگی دارد نه من
     reasmb: آیا می خواهی که بتوانی (2) ؟
     reasmb: goto چه

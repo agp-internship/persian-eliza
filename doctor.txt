@@ -72,21 +72,16 @@ key: یاد 5
     reasmb: اسم (1) را نیاور
 key: اگر 3
   decomp: * اگر *
-    reasmb: آیا واقعا فکر می کنید که ممکن است (2) ؟
-    reasmb: آیا آرزو می کنید که (2) ؟
+    reasmb: آیا واقعا فکر می کنی که ممکن است (2) ؟
+    reasmb: آیا آرزو می کنی که (2) ؟
     reasmb: واقعا اگر (2) چه می شود ؟
-key: dreamed 4
-  decomp: * i dreamed *
-    reasmb: Really, (2) ?
-    reasmb: Have you ever fantasized (2) while you were awake ?
-    reasmb: Have you ever dreamed (2) before ?
-    reasmb: goto dream
-key: dream 3
+key: آرزو 4
+  decomp: * آرزو می کنم *
+    reasmb: واقعا دوست داری (2) ؟
+    reasmb: آیا قبلا که آرزو داشتی (2) ؟
   decomp: *
-    reasmb: What does that dream suggest to you ?
-    reasmb: Do you dream often ?
-    reasmb: What persons appear in your dreams ?
-    reasmb: Do you believe that dreams have something to do with your problems ?
+    reasmb: آیا آرزو های زیادی داری ؟
+    reasmb: چه افرادی در رویا های تو ظاهر می شوند ؟
 key: perhaps
   decomp: *
     reasmb: You don't seem quite certain.

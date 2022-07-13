@@ -143,12 +143,6 @@ key: هستی
     reasmb: شاید من در خیال تو (2) هستم
     reasmb: واقعا گاهی فکر می کنی من (2) هستم ؟
     reasmb: goto چه
-key: your
-  decomp: * your *
-    reasmb: Why are you concerned over my (2) ?
-    reasmb: What about your own (2) ?
-    reasmb: Are you worried about someone else's (2) ?
-    reasmb: Really, my (2) ?
 key: بودم 2
   decomp: * آیا * بودم
     reasmb: اگر واقعا (2) باشی چه ؟
@@ -172,50 +166,31 @@ key: من
     reasmb: گرفتن (2) چه معنایی برای تو دارد ؟
     reasmb: اینکه تو (2) میخواهی چه ربطی به صحبت ما دارد ؟
   decomp: * من @ناراحت هستم *
-    reasmb: بسیار متاسفم که می شنوم تو (2) هستی
-    reasmb: آیا فکر می کنی آمدن به اینجا کمک می کند (2) نباشی ؟
-    reasmb: می توانی توضیح بدهی که چرا (2) هستی ؟
+    reasmb: بسیار متاسفم که میشنوم تو (2) هستی
+    reasmb: آیا فکر میکنی آمدن به اینجا کمک میکند (2) نباشی ؟
+    reasmb: میتوانی توضیح بدهی که چرا (2) هستی ؟
   decomp: * من @خوشحال هستم *
     reasmb: چه چیزی تو را (2) کرده است ؟
     reasmb: آیا رفتارت تو را (2) کرده است ؟
-  decomp: * i was *
-    reasmb: goto was
-  decomp: * i @belief * i *
-    reasmb: Do you really think so ?
-    reasmb: But you are not sure you (3) .
-    reasmb: Do you really doubt you (3) ?
-  decomp: * i * @belief * you *
-    reasmb: goto تو
-  decomp: * i am *
-    reasmb: Is it because you are (2) that you came to me ?
-    reasmb: How long have you been (2) ?
-    reasmb: Do you believe it is normal to be (2) ?
-    reasmb: Do you enjoy being (2) ?
-  decomp: * i @cannot *
-    reasmb: How do you think that you can't (3) ?
-    reasmb: Have you tried ?
-    reasmb: Perhaps you could (3) now.
-    reasmb: Do you really want to be able to (3) ?
-  decomp: * i don't *
-    reasmb: Don't you really (2) ?
-    reasmb: Why don't you (2) ?
-    reasmb: Do you wish to be able to (2) ?
-    reasmb: Does that trouble you ?
-  decomp: * do i feel *
-    reasmb: Tell me more about such feelings.
-    reasmb: Do you often feel (2) ?
-    reasmb: Do you enjoy feeling (2) ?
-    reasmb: Of what does feeling (2) remind you ?
-  decomp: * i * you *
-    reasmb: Perhaps in your fantasies we (2) each other.
-    reasmb: Do you wish to (2) me ?
-    reasmb: You seem to need to (2) me.
-    reasmb: Do you (2) anyone else ?
+  decomp: * من * بودم
+    reasmb: goto بودم
+  decomp: * من * هستم
+    reasmb: چون (2) هستی سراغ من آمدی ؟
+    reasmb: چه مدت است که (2) هستی ؟
+    reasmb: فکر میکنی اینکه (2) هستی عادی است ؟
+    reasmb: از (2) بودنت لذت میبری ؟
+  decomp: * من نمیتوانم *
+    reasmb: آیا تا به حال تلاش کردی ؟
+    reasmb: شاید تو الان بتوانی (2) ؟
+    reasmb: آیا واقعا دوست داری که (2) ؟
+  decomp: * من تو را *
+    reasmb: شاید در رویایت تو من را (2)
+    reasmb: آیا آرزو می کنی که من را (2) ؟
+    reasmb: آیا شخص دیگری را (2) ؟
   decomp: *
-    reasmb: You say (1) ?
-    reasmb: Can you elaborate on that ?
-    reasmb: Do you say (1) for some special reason ?
-    reasmb: That's quite interesting.
+    reasmb: تو گفتی (1) ؟
+    reasmb: میتوانی در مورد آن توضیح دهی ؟
+    reasmb: چه قدر جالب
 key: تو
   decomp: * تو من را یاد * می اندازی
     reasmb: goto مثل
@@ -255,22 +230,6 @@ key: خیر
 key: نه
   decomp: *
     reasmb: goto خیر
-key: my 2
-  decomp: $ * my *
-    reasmb: Lets discuss further why your (2) .
-    reasmb: Earlier you said your (2) .
-    reasmb: But your (2) .
-    reasmb: Does that have anything to do with the fact that your (2) ?
-  decomp: * my * @family *
-    reasmb: Tell me more about your family.
-    reasmb: Who else in your family (4) ?
-    reasmb: Your (3) ?
-    reasmb: What else comes to mind when you think of your (3) ?
-  decomp: * my *
-    reasmb: Your (2) ?
-    reasmb: Why do you say your (2) ?
-    reasmb: Does that suggest anything else which belongs to you ?
-    reasmb: Is it important that your (2) ?
 key: میتوانی
   decomp: * آیا میتوانی *
     reasmb: تو فکر می کنی من می توانم (2) . نه ؟

@@ -1,0 +1,297 @@
+initial: خوش آمدی ! مشکلت را بگو
+final: به امید دیدار ! از گفتگو با تو بسیار لذت بردم
+quit: خدانگه دار
+quit: خدا نگه دار
+quit: خداحافظ
+quit: انصراف
+quit: به امید دیدار
+pre: dont don't
+pre: cant can't
+pre: wont won't
+pre: recollect remember
+pre: dreamt dreamed
+pre: dreams dream
+pre: maybe perhaps
+pre: how what
+pre: when what
+pre: certainly yes
+pre: machine computer
+pre: computers computer
+pre: were was
+pre: you're you are
+pre: i'm i am
+pre: same alike
+post: هستم هستی
+post: هستی هستم
+post: من تو
+post: تو من
+post: am are
+post: your my
+post: me you
+post: myself yourself
+post: yourself myself
+post: i you
+post: you I
+post: my your
+post: i'm you are
+synon: ناراحت غمگین افسرده
+synon: خوشحال شاد سرحال
+synon: belief feel think believe wish
+synon: family mother mom father dad sister brother wife children child
+synon: desire want need
+synon: sad unhappy depressed sick
+synon: happy elated glad better
+synon: cannot can't
+synon: everyone everybody nobody noone
+synon: be am is are was
+key: xnone
+  decomp: *
+    reasmb: متوجه منظورت نمی شوم
+    reasmb: لطفا از این موضوع عبور کن
+    reasmb: منظورت از این حرف چه بود؟
+key: متاسفم
+  decomp: *
+    reasmb: لطفا عذرخواهی نکن
+    reasmb: نیازی به معذرت خواهی نیست
+    reasmb: به تو گفتم که هیچ ضرورتی به عذرخواهی وجود ندارد
+key: apologise
+  decomp: *
+    reasmb: goto sorry
+key: فکر 5
+  decomp: * به * فکر می کنم
+    reasmb: آیا معمولا به (2) فکر می کنی ؟
+    reasmb: آیا فکر کردن به (2) چیزی را به خاطرت نمی آورد ؟
+    reasmb: دیگر به چه چیزهایی فکر می کنی ؟
+    reasmb: در حال حاضر چه چیزی از (2) به یاد داری ؟
+    reasmb: ارتباط بین من و (2) چیست ؟
+key: یاد 5
+  decomp: آیا * را به یاد داری *
+    reasmb: فکر می کنید من (1) را فراموش می کنم ؟
+    reasmb: چرا فکر کردی ممکن است من (1) را فراموش کنم ؟
+    reasmb: درباره (1) خبر داری ؟
+    reasmb: goto چه
+    reasmb: اسم (1) را نیاور
+key: اگر 3
+  decomp: * اگر *
+    reasmb: آیا واقعا فکر می کنی که ممکن است (2) ؟
+    reasmb: آیا آرزو می کنی که (2) ؟
+    reasmb: واقعا اگر (2) چه می شود ؟
+key: آرزو 4
+  decomp: * آرزو می کنم *
+    reasmb: واقعا دوست داری (2) ؟
+    reasmb: آیا قبلا که آرزو داشتی (2) ؟
+  decomp: *
+    reasmb: آیا آرزو های زیادی داری ؟
+    reasmb: چه افرادی در رویا های تو ظاهر می شوند ؟
+key: شاید
+  decomp: *
+    reasmb: به نظر می رسد مطمئن نیستی
+    reasmb: چرا اطمینان نداری ؟
+    reasmb: مطمئن نیستی ؟
+key: نام 15
+  decomp: *
+    reasmb: من به نام علاقه ندارم
+    reasmb: من خیلی به اسم و نام اهمیت نمی دهم
+key: اسم 15
+  decomp: *
+    reasmb: goto نام
+key: english
+  decomp: *
+    reasmb: goto xforeign
+    reasmb: قبلا به تو گفته بودم. من به زبان انگلیسی مسلط نیستم
+key: deutsch
+  decomp: *
+    reasmb: goto xforeign
+    reasmb: قبلا گفته بودم. من به زبان آلمانی مسلط نیستم
+key: francais
+  decomp: *
+    reasmb: goto xforeign
+    reasmb: از قبل گفته بودم که من به زبان فرانسوی مسلط نیستم
+key: italiano
+  decomp: *
+    reasmb: goto xforeign
+    reasmb: قبلا گفته بودم. من به زبان ایتالیایی مسلط نیستم
+key: espanol
+  decomp: *
+    reasmb: goto xforeign
+    reasmb: قبلا گفته بودم. من به زبان اسپانیایی مسلط نیستم
+key: xforeign
+  decomp: *
+    reasmb: من فقط به فارسی صحبت می کنم
+key: سلام
+  decomp: *
+    reasmb: سلام. خوشحال می شوم که با هم گفتگو کنیم
+    reasmb: حالتون خوب است؟ چه کمکی از دست من بر می آید؟
+key: کامپیوتر 50
+  decomp: *
+    reasmb: آیا کامپیوتر ها تو را نگران می کنند ؟
+    reasmb: چرا به کامپیوتر ها اشاره کردی ؟
+    reasmb: فکر می کنی ماشین ها چه کمکی به حل مشکلات تو می کنند ؟
+    reasmb: فکر نمی کنی شاید کامپیوتر ها بتوانند به مردم کمک کنند ؟
+    reasmb: چه چیز ماشین ها تو را نگران می کند ؟
+    reasmb: چه نظری درباره کامیپوتر ها داری ؟
+key: هستم
+  decomp: * من * هستم
+    reasmb: واقعا فکر می کنی (2) هستی ؟
+    reasmb: دلت می خواهد (2) باشی ؟
+    reasmb: دوست داری من تو را (2) صدا بزنم ؟
+    reasmb: goto چه
+key: هستی
+  decomp: * آیا * هستی
+    reasmb: چرا علاقمندی که بدانی من (2) هستم یا خیر ؟
+    reasmb: ترجیح می دهی من (2) باشم ؟
+    reasmb: شاید من در خیال تو (2) هستم
+    reasmb: واقعا گاهی فکر می کنی من (2) هستم ؟
+    reasmb: goto چه
+key: بودم 2
+  decomp: * آیا * بودم
+    reasmb: اگر واقعا (2) باشی چه ؟
+    reasmb: آیا فکر می کنی (2) بودی ؟
+    reasmb: goto چه
+  decomp: * من * بودم
+    reasmb: جدی (2) بودی ؟
+    reasmb: چرا الان به من می گویی که تو (2) بودی ؟
+    reasmb: شاید من از قبل می دانستم که تو (2) بودی
+key: بودی 2
+  decomp: * آیا * بودی
+    reasmb: دوست داری که فکر کنی من (2) بودم ؟
+    reasmb: اینکه من (2) بودم چه چیزی را نشان میدهد ؟
+    reasmb: تو چی فکر میکنی ؟
+    reasmb: شاید من (2) بوده باشم
+key: من
+  decomp: * من * میخواهم *
+    reasmb: چرا (2) میخواهی ؟
+    reasmb: فرض کن به زودی (2) خواهی داشت
+    reasmb: اگر تو هرگز (2) نداشته باشی چه می شود ؟
+    reasmb: گرفتن (2) چه معنایی برای تو دارد ؟
+    reasmb: اینکه تو (2) میخواهی چه ربطی به صحبت ما دارد ؟
+  decomp: * من @ناراحت هستم *
+    reasmb: بسیار متاسفم که میشنوم تو (2) هستی
+    reasmb: آیا فکر میکنی آمدن به اینجا کمک میکند (2) نباشی ؟
+    reasmb: میتوانی توضیح بدهی که چرا (2) هستی ؟
+  decomp: * من @خوشحال هستم *
+    reasmb: چه چیزی تو را (2) کرده است ؟
+    reasmb: آیا رفتارت تو را (2) کرده است ؟
+  decomp: * من * بودم
+    reasmb: goto بودم
+  decomp: * من * هستم
+    reasmb: چون (2) هستی سراغ من آمدی ؟
+    reasmb: چه مدت است که (2) هستی ؟
+    reasmb: فکر میکنی اینکه (2) هستی عادی است ؟
+    reasmb: از (2) بودنت لذت میبری ؟
+  decomp: * من نمیتوانم *
+    reasmb: آیا تا به حال تلاش کردی ؟
+    reasmb: شاید تو الان بتوانی (2) ؟
+    reasmb: آیا واقعا دوست داری که (2) ؟
+  decomp: * من تو را *
+    reasmb: شاید در رویایت تو من را (2)
+    reasmb: آیا آرزو می کنی که من را (2) ؟
+    reasmb: آیا شخص دیگری را (2) ؟
+  decomp: *
+    reasmb: تو گفتی (1) ؟
+    reasmb: میتوانی در مورد آن توضیح دهی ؟
+    reasmb: چه قدر جالب
+key: تو
+  decomp: * تو من را یاد * می اندازی
+    reasmb: goto مثل
+  decomp: * تو * هستی
+    reasmb: چه چیزی تو را به این باور انداخت که من (2) هستم ؟
+    reasmb: اگر دوست داری فکر کن که من (2) هستم
+    reasmb: آیا گاهی آرزو می کنی که (2) بودی ؟
+    reasmb: شاید تو خودت دوست داری (2) باشی ؟
+  decomp: * تو من را *
+    reasmb: چرا فکر می کنی من تو را (2) ؟
+    reasmb: تو دوست داری که فکر کنی من تو را (2) . نه ؟
+    reasmb: چه چیزی تو را به این باور انداخت که من تو را (2) ؟
+    reasmb: واقعا ؟ من تو را (2) ؟
+    reasmb: آیا شخص دیگری نیز فکر می کند که من تو را (2) ؟
+  decomp: * تو *
+    reasmb: ما در مورد تو صحبت می کنیم . نه من
+    reasmb: اوه من (2) ؟
+    reasmb: تو که وقعا در مورد من صحبت نمی کنی ؟
+    reasmb: الان نسبت به من چه حسی داری ؟
+key: دارم
+  decomp: * دارم
+    reasmb: از کی (1) داری ؟
+    reasmb: آیا در اطرافیان کسی (1) دارد ؟
+    reasmb: چرا (1) داری ؟
+key: بله
+  decomp: *
+    reasmb: به نظر می آید تقریبا موافق هستی
+    reasmb: متوجه هستم
+    reasmb: درک می کنم
+key: اره
+  decomp: *
+    reasmb: goto بله
+key: خیر
+  decomp: *
+    reasmb: چرا جواب منفی می دهی ؟
+    reasmb: چرا نه ؟
+key: نه
+  decomp: *
+    reasmb: goto خیر
+key: میتوانی
+  decomp: * آیا میتوانی *
+    reasmb: تو فکر می کنی من می توانم (2) . نه ؟
+    reasmb: goto چه
+    reasmb: تو از من می خوای که بتوانم (2) ؟
+    reasmb: شاید هم تو می خواهی که خودت بتوانی (2) ؟
+key: میتوانم
+  decomp: * آیا میتوانم *
+    reasmb: این که بتوانی (2) یا نتوانی به خودت بستگی دارد نه من
+    reasmb: آیا می خواهی که بتوانی (2) ؟
+    reasmb: goto چه
+key: چه
+  decomp: *
+    reasmb: چرا این سوال را می پرسی ؟
+    reasmb: آیا این سوال برای تو مهم است ؟
+    reasmb: دقیقا می خواهی چه چیزی را متوجه شوی ؟
+    reasmb: آیا مشابه این سوالات در ذهنت زیاد است ؟
+    reasmb: چه جوابی تو را خوشحال می کند ؟
+    reasmb: خودت چی فکر می کنی ؟
+    reasmb: وقتی این سوال را می پرسی چه چیزی به ذهنت می آید ؟
+    reasmb: این سوال را قبلا نپرسیده بودی ؟
+    reasmb: آیا از شخص دیگری هم سوال کردی ؟
+key: زیرا
+  decomp: *
+    reasmb: آیا این یک دلیل منطقی است ؟
+    reasmb: دلیل دیگری به ذهنت نمی آید ؟
+    reasmb: چه دلایل دیگری داری ؟
+key: چرا
+  decomp: * چرا تو *
+    reasmb: نو فکر می کنی من (2) ؟
+    reasmb: goto چه
+  decomp: * چرا من نمی توانم *
+    reasmb: چرا فکر می کنی تو نمی توانی (2) ؟
+    reasmb: آیا واقعا می خواهی که بتوانی (2) ؟
+    reasmb: فکر می کنی اینکه بتوانی (2) به تو کمک می کند ؟
+    reasmb: به نظرت چرا نمی توانی (2) ؟
+    reasmb: goto چه
+  decomp: *
+    reasmb: goto چه
+key: همه 2
+  decomp: * همه *
+    reasmb: واقعا (2) ؟
+    reasmb: مطمئنا این طور نیست که (2)
+    reasmb: آیا می توانی یک فرد خاص را مثال بزنی ؟
+    reasmb: امکانش هست بپرسم چه کسی ؟
+    reasmb: در مورد چه کسی صحبت می کنی ؟
+    reasmb: مثلا چه کسی ؟
+key: همیشه 1
+  decomp: *
+    reasmb: امکانش هست یک نمونه مثال بیاوری ؟
+    reasmb: چه زمانی ؟
+    reasmb: وقعا؟ همیشه ؟
+key: مثل 10
+  decomp: *
+    reasmb: از چه نظر ؟
+    reasmb: چه شباهتی در این بین می بینی ؟
+    reasmb: چرافکر می کنی شبیه هستند ؟
+    reasmb: چگونه ؟
+key: مانند 10
+  decomp: *
+    reasmb: goto مثل
+key: شبیه 10
+  decomp: *
+    reasmb: goto مثل
+   

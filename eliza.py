@@ -1,7 +1,6 @@
 import logging
 import random
 import re
-from collections import namedtuple
 
 # Fix Python2/Python3 incompatibility
 try:
@@ -10,6 +9,16 @@ except NameError:
     pass
 
 log = logging.getLogger(__name__)
+punctuations = [',', '.', ';', '?', '!', ':', '،', '؛']
+
+
+def get_last_word(words):
+    index = len(words) - 1
+    while index >= 0:
+        if re.match(r'\w+', words[index]):
+            return words[index], index
+        index -= 1
+    return words[-1], -1
 
 
 class Key:
@@ -126,7 +135,12 @@ class Eliza:
                 if index < 1 or index > len(results):
                     raise ValueError("Invalid result index {}".format(index))
                 insert = results[index - 1]
-                for punct in [',', '.', ';']:
+                last_word, last_index = get_last_word(insert)
+                if last_word[-1] == "م":
+                    insert[last_index] = last_word[:-1] + "ی"
+                elif last_word[-1] == "ی":
+                    insert[last_index] = last_word[:-1] + "م"
+                for punct in punctuations:
                     if punct in insert:
                         insert = insert[:insert.index(punct)]
                 output.extend(insert)
@@ -174,9 +188,17 @@ class Eliza:
         if text.lower() in self.quits:
             return None
 
+        text = re.sub(r'\s* می \s*', ' می', text)
+        text = re.sub(r'\s* نمی \s*', ' نمی', text)
+
+        # if not re.match(r'\s*هستی\s*', text):
+        #     text = re.sub(r'\s*ی\S*$', ' هستی', text)
+
         text = re.sub(r'\s*\.+\s*', ' . ', text)
         text = re.sub(r'\s*,+\s*', ' , ', text)
         text = re.sub(r'\s*;+\s*', ' ; ', text)
+        text = re.sub(r'\s*؟+\s*', ' ؟ ', text)
+        text = re.sub(r'\s*\?+\s*', ' ? ', text)
         text = re.sub(r'\s*:+\s*', ' : ', text)
         text = re.sub(r'\s*،+\s*', ' ، ', text)
         text = re.sub(r'\s*؛+\s*', ' ؛ ', text)

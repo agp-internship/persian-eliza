@@ -1,46 +1,19 @@
-initial: .چطوری؟لطفا مشکلت رو بهم بگو
+initial: سلام، امیدوارم روز خوبی داشته باشی.
 final:خدانگهدار،ممنونم که باهام حرف زدی.
 quit: خدانگهدار
+quit: خدانگه دار
 quit: خداحافظ
+quit: خدافظ
 quit: خروج
 
-pre: خوبم خوبی
-pre: dont don't
-pre: cant can't
-pre: wont won't
-pre: recollect remember
-pre: dreamt dreamed
-pre: dreams dream
-pre: maybe perhaps
-pre: how what
-pre: when what
-pre: certainly yes
-pre: machine computer
-pre: computers computer
-pre: were was
-pre: you're you are
-pre: i`m i am
-pre: same alike
-
-post: am are
 post: هستم هستی
-post: your my
 post: تو من
-post: my your
 post: من تو
-post: me you
-post: من تو
-post: myself yourself
 post: خودم خودت
-post: yourself myself
 post:خودت خودم 
-post: i you
-post: من تو
-post: you I
-post: تو من
-post: i'm you are
 post: من‌هستم توهستی
-
+post: ما شما
+post: شما ما
 synon: باور احساس فکر ایمان آرزو
 synon: خانواده مادر مامان پدر بابا خواهر برادر زن مرد دختر پسر همسر بچه بچه‌ها 
 synon: میل خواست نیاز
@@ -56,44 +29,41 @@ key: xnone
     reasmb: منظورت از این حرف چیه؟
     reasmb: آیا احساس شدیدی درمورد بحث تو این موضوع داری؟
 
-key: متاسفم
+key: متاسفم 5
   decomp: *
     reasmb: لطفا عذرخواهی نکن.
     reasmb: عذرخواهی لازم نیست.
     reasmb: من که بهت گفتم نیازی نیست عذرخواهی کنی.
 
-key: عذرخواهی 
+key: عذرخواهی 5
   decomp: *
-    reasmb: goto sorry
     reasmb: goto متاسفم
 
-key: یادآوری 5
-  decomp: * من یادمه*
-  decomp: * من یادم هست*
-  decomp: * من به یاد دارم*
-    reasmb: اغلب به (2) فکر میکنی؟
+key: فکر 5
+  decomp: *من فکر میکنم*
+    reasmb: اغلب به (2) بودن فکر میکنی؟
     reasmb: چیزی هست که با فکر کردن به (2) به یادت بیاد؟
-    reasmb: دیگه چی بادت میاد؟
+    reasmb: دیگه به چی فکر میکنی؟
     reasmb: همین الان چه چیزایی از (2) یادت میاد؟
     reasmb: تو موقعیت الانت چه چیزی تو رو به یاد (2) می‌اندازه؟
     reasmb: چه ارتباطی بین من و (2) وجود داره؟
-  decomp: * یادت هست *
+key:یاد 5
   decomp: * یادته *
-    reasmb: فکر کردی (2) را فراموش می‌کنم؟
-    reasmb: به نظرت چرا باید الان (2) را به خاطر بیاورم؟
-    reasmb: در مورد (2) چطور؟
+    reasmb: فکر کردی (1) را فراموش می‌کنم؟
+    reasmb: چرا فکر کردی (1) رو فراموش می‌کنم؟
+    reasmb: در مورد (1) چطور؟
     reasmb: goto چی
-    reasmb: تو به (2) اشاره کردی؟
+    reasmb: اسم (1) و نیار.
 
-key: اگر 3
-  decomp: * اگر *
+key: اگه 3
+  decomp: * اگه *
     reasmb:  فکر می کنی احتمال داره که (2)؟
     reasmb: این آرزو را داری که (2)؟
     reasmb: در مورد (2) چی میدونی؟
-    reasmb: واقعاً،اگه (2)؟
+    reasmb: واقعاً،اگه (2) چی؟
 
-key: رویا 4
-  decomp: * رویا دیدم *
+key: آرزو 4
+  decomp: * آرزو می کنم *
     reasmb: واقعا، (2)؟
     reasmb:  تا به حال شده در حالی که بیدر بودی (2) رو خیال پردازی کنی؟
     reasmb: آیا قبلاً (2) رو تو رویاهات دیدی؟
@@ -119,6 +89,10 @@ key: اسم 15
     reasmb: من به نام ها علاقه ای ندارم.
     reasmb: قبلاً بهت گفتم،اسم‌ها برام مهم نیست.لطفا ادامه بده.
 
+key: نام 15
+  decomp: *
+  reasmb: goto اسم
+
 key: اینگلیسی
   decomp: *
     reasmb: goto خارجی
@@ -137,22 +111,55 @@ key: فرانسه
 key: ایتالیایی
   decomp: *
     reasmb: goto خارجی
-    reasmb: قبلا بهت گفتم، ایتالیایی نمیفهمم.
+    reasmb: قبلا بهت گفتم، ایتالیایی نمی فهمم.
 
 key: اسپانول
   decomp: *
     reasmb: goto خارجی
-    reasmb: قبلاً بهت گفتم، من اسپانیایی را نمی فهمم.
+    reasmb: قبلاً بهت گفتم، من اسپانیایی نمی فهمم.
+
+key: English
+  decomp: *
+    reasmb: goto xforeign
+    reasmb: قبلاً بهت گفتم، من English نمی فهمم.
+
+key: Deutsch
+  decomp: *
+    reasmb: goto xforeign
+    reasmb: قبلا بهت گفتم من Deutsch نمیفهمم.
+
+key: Francais
+  decomp: *
+    reasmb: goto xforeign
+    reasmb: قبلا بهت گفتم من Francais نمیفهمم.
+
+key: Italiano
+  decomp: *
+    reasmb: goto xforeign
+    reasmb: قبلا بهت گفتم من Italiano نمیفهمم.
+
+key: Espanol
+  decomp: *
+    reasmb: goto xforeign
+    reasmb: قبلا بهت گفتم من Espanol نمیفهمم.
 
 key: خارجی
   decomp: *
     reasmb: من فقط فارسی صحبت می کنم.
+    reasmb: من فقط Persian صحبت می کنم.
 
-key: سلام
+key: xforeign
+  decomp: *
+  reasmb: goto خارجی
+
 key: درود
   decomp: *
     reasmb: چطوری؟ لطفا مشکلت رو بگو.
     reasmb: سلام. مشکلت چی می‌تونه باشه؟
+
+key: سلام
+ decomp: *
+ reasmb: goto درود
 
 key: کامپیوتر 50
   decomp: *
@@ -164,118 +171,108 @@ key: کامپیوتر 50
     reasmb: نظرت در مورد ماشین‌ها چیه؟
 
 key: هستم
-  decomp: *من هستم*
-    reasmb: باورداری که (2) هستی؟
-    reasmb: میخوای (2) باشی؟
-    reasmb: دوست داری بهت بگم که (2) هستی؟
-    reasmb: اگه (2) بودی چه معنایی داشت؟
+  decomp: *هستم*
+    reasmb: باورداری که (1) هستی؟
+    reasmb: میخوای (1) باشی؟
+    reasmb: دوست داری بهت بگم که (1) هستی؟
+    reasmb: اگه (1) بودی چه معنایی داشت؟
     reasmb: goto چی
   decomp: *
     reasmb: چرا می‌گی "هستم"؟
     reasmb: من نمیفهمش.
 
 key: هستی
-  decomp: * هستی تو*
-    reasmb: چرا به این علاقه‌داری که من (2) هستم یا نه؟
-    reasmb: ترجیح می دادی که من (2) نباشم؟
-    reasmb: شاید من (2) در خیالاتت هستم.
-    reasmb: گاها فکر می کنی من (2) هستم؟
+  decomp: * هستی*
+    reasmb: چرا به این علاقه‌داری که من (1) هستم یا نه؟
+    reasmb: ترجیح می دادی که من (1) نباشم؟
+    reasmb: شاید من (1) در خیالاتت هستم.
+    reasmb: گاها فکر می کنی من (1) هستم؟
     reasmb: goto چی
-  decomp: * هستی *
-    reasmb: فکر کردی که ممکنه (2) نباشن؟
-    reasmb: اگه (2) نبودن،دوسش داشتی؟
-    reasmb: چی میشد اگه (2) نبودن؟
-    reasmb: احتمالاً (2) هستن.
+  decomp: * هستن*
+    reasmb: فکر کردی که ممکنه (1) نباشن؟
+    reasmb: اگه (1) نبودن،دوسش داشتی؟
+    reasmb: چی میشد اگه (1) نبودن؟
+    reasmb: احتمالاً (1) هستن.
 
-key: شما
-  decomp: * شما *
+key: تو
+  decomp: * تو *
     reasmb: چرا نگران (2) من هستی؟
     reasmb: در مورد (2) خودت چطور؟
     reasmb:  در مورد(2) شخص دیگه‌ای نگرانی؟
     reasmb: واقعاً،(2) من؟
 
-key: بود 2
-  decomp: * من بودم *
-    reasmb: اگر تو (2) بودی چه؟
-    reasmb: فکر می کنی (2) بودی؟
-    reasmb: تو (2) بودی؟
-    reasmb: اگر تو (2) بودی چه معنایی داشت؟
-    reasmb: (2) چه چیزی را بهت پیشنهاد می کنه؟
-    reasmb: goto "چی"
-  decomp: * من بودم *
+key: بودم 2
+  decomp: * بودم *
+    reasmb: اگر تو (1) بودی چه؟
+    reasmb: فکر می کنی (1) بودی؟
+    reasmb: تو (1) بودی؟
+    reasmb: اگر تو (1) بودی چه معنایی داشت؟
+    reasmb: (1) چه چیزی را بهت پیشنهاد می کنه؟
     reasmb: واقعا بودی؟
-    reasmb: چرا الان به من می‌گی که (2) بودی؟
-    reasmb :شاید من همین الانم می دونم که تو (2) بودی.
-  decomp: * تو بودی *
-    reasmb: دوست داری باور کنی که من (2) بودم؟
-    reasmb: چه چیزی نشون می‌ده که من (2) بودم؟
+    reasmb: چرا الان به من می‌گی که (1) بودی؟
+    reasmb :شاید من همین الانم می دونم که تو (1) بودی.
+    reasmb: goto "چی"
+key: بودی 2  
+  decomp: * بودی *
+    reasmb: دوست داری باور کنی که من (1) بودم؟
+    reasmb: چه چیزی نشون می‌ده که من (1) بودم؟
     reasmb: تو چی فکر میکنی؟
-    reasmb: شاید من (2) بودم.
-    reasmb: اگر (2) بودم چه می شد؟
+    reasmb: شاید من (1) بودم.
+    reasmb: اگر (1) بودم چه می شد؟
 
 key: من
   
-  decomp: * من @میخوام *
-    reasmb: اگر (3) را بدست بیاری چه معنایی برات داره؟
-    reasmb: چرا (3) را می خوای؟
-    reasmb: ینظر میاد (3) را زود بدست میاری؟
-    reasmb: اگر هرگز (3) را دریافت نکردی چی؟
-    reasmb: گرفتن (3) برات چه معنایی داره؟
-    reasmb: خواستن (3) چه ربطی به این بحث داره؟
+  decomp: *من * میخوام *
+    reasmb: اگر (2) رو بدست بیاری چه معنایی برات داره؟
+    reasmb: چرا (2)  می خوای؟
+    reasmb: ینظر میاد (2) رو زود بدست میاری؟
+    reasmb: اگر هرگز (2) رو دریافت نکردی چی؟
+    reasmb: گرفتن (2) برات چه معنایی داره؟
+    reasmb: خواستن (2) چه ربطی به این بحث داره؟
   
-  decomp: * من هستم * @ناراحت*
-    reasmb: متاسفم که می شنوم (3) هستی.
-    reasmb: فکر می‌کنی اومدن به اینجا کمک می‌کنه (3) نباشی؟
-    reasmb: مطمئنم که (3) بودن خوشایند نیست .
-    reasmb: می تونی توضیح بدی که چه‌چیزی باعث (3) شد؟
+  decomp: * من @ناراحت هستم *
+    reasmb: متاسفم که می شنوم (2) هستی.
+    reasmb: فکر می‌کنی اومدن به اینجا کمک می‌کنه ناراحت نباشی؟
+    reasmb: مطمئنم که ناراحت بودن خوشایند نیست .
+    reasmb: می تونی توضیح بدی که چه‌چیزی باعث ناراحتیت شد؟
   
-  decomp: * من هستم * @خوشحال *
-    reasmb: چجوری بهت کمک کردم تا (3) بشی؟
-    reasmb: درمانت تو رو (3) کرده؟
-    reasmb: چی الان تو رو (3) میکنه؟
-    reasmb: می تونی توضیح‌بدی که چرا یهویی (3) هستی؟
+  decomp: * من @خوشحال هستم *
+    reasmb: چجوری بهت کمک کردم تا (2) بشی؟
+    reasmb: درمانت تو رو (2) کرده؟
+    reasmb: چی الان تو رو (2) میکنه؟
+    reasmb: می تونی توضیح‌بدی که چرا یهویی (2) هستی؟
   
   decomp: * من بودم *
     reasmb: goto بود
- 
-  decomp: * من @معتقد * من *
-    reasmb: Do you really think so ?
-    reasmb: واقعا اینطور فکر می کنی؟
-    reasmb: But you are not sure you (3) .
-    reasmb: اما تو مطمئن نیستی که (3) .
-    reasmb: Do you really doubt you (3) ?
-    reasmb: واقعاً شک داری که تو (3)؟
   
-  decomp: * من * @معتقد *تو *
-    reasmb: goto تو
-
-  decomp: * من هستم *
+  decomp: * من * هستم
     reasmb: بخاطر اینکه (2) هستی اومدی سراغ من؟
     reasmb: چه مدته که (2) هستی؟
     reasmb: اعتقاد داری که (2) بودن طبیعیه؟
     reasmb: از (2) بودن لذت می بری؟
-
-  decomp: * من @نمیتونم *
-    reasmb: چطور فکر می کنی که نمی‌تونی (3)؟
+  
+  decomp: * من * بودم
+    reasmb: goto بودم
+  
+  decomp: * من نمیتونم *
+    reasmb: چطور فکر می کنی که نمی‌تونی (2)؟
     reasmb: امتحان کردی؟
-    reasmb: شاید الان (3) رو بتونی.
-    reasmb: واقعاً می خوای بتونی (3)؟
+    reasmb: شاید الان (2) رو بتونی.
+    reasmb: واقعاً می خوای بتونی (2)؟
 
-  decomp: *نمی‌کنم *
   decomp: *نیستم *
-    reasmb: واقعاً (2) نیستی؟
-    reasmb: چرا (2) نمی کنی؟
-    reasmb: می خوای بتونی که(2)؟
+    reasmb: واقعاً (1) نیستی؟
+    reasmb: چرا (1) نیستی؟
+    reasmb: مگه (1) بودن چه مشکلی داره؟
     reasmb: این اذیتت می کنه؟
 
-  decomp: * آیا احساس می کنم *
   decomp: * احساس می کنم *
     reasmb: درمورد این احساسات  بیشتر بهم بگو.
-    reasmb: اغلب (2) را احساس می کنی؟
+    reasmb: اغلب (2) رو حس می کنی؟
     reasmb: از حس کردن (2) لذت می بری؟
-    reasmb: احساس (2) چه چیزی را بهت  یادآوری می کنه؟
+    reasmb: احساس (2) چه چیزی رو بهت  یادآوری می کنه؟
 
-  decomp: * من * شما *
+  decomp: * من تو *
     reasmb: شاید تو خیالاتت همدیگرو (2) .
     reasmb: میخوای که من رو (2)؟
     reasmb: به نظر می رسه به (2) من نیاز داری.
@@ -288,16 +285,16 @@ key: من
     reasmb: این خیلی جالبه.
 
 key: تو
-  decomp: * تو منو یاد میاری *
+  decomp: * تو منو یاد * میاری *
     reasmb: goto مثل
 
-  decomp: * تو هستی *
+ decomp: * تو * هستی  
     reasmb: چه چیزی باعث می‌شه فکر کنی من (2) هستم؟
     reasmb: این خوشحالت می کنه که باور کنی من (2) هستم؟
     reasmb: بعضی وقتا آرزو می کنی که ایکاش (2) بودی؟
     reasmb: شاید دوست داری (2) باشی.
 
-  decomp: * تو * من *
+decomp: * تو من رو *  
     reasmb: چرا فکر می کنی من تو رو (2)؟
     reasmb: دوست داری فکر کنی من تو رو (2)، نه؟
     reasmb: چه چیزی باعث می شه فکر کنی من تو رو (2)؟
@@ -306,7 +303,7 @@ key: تو
     reasmb: فرض کن من تو رو (2)،این چه معنایی داره؟
     reasmb: شخص دیگه‌ای باور میکنه که من تو رو (2)؟
 
-  decomp: * شما *
+  decomp: * تو *
     reasmb: ما در مورد تو بحث می کردیم، نه من.
     reasmb: اوه، من (2)؟
     reasmb: تو که واقعا در مورد من صحبت نمی کنی، درسته؟
@@ -314,48 +311,50 @@ key: تو
 
 key: آره
   decomp: *
-    reasmb: به نظر می رسه که کاملاً مثبت اندیشی.
-    reasmb: مطمئنی.
+    reasmb: بنظر میاد تقریبا موافقی.
     reasmb: متوجهم.
     reasmb: می فهمم.
+
+key: بله
+  decomp: *
+  reasmb: goto آره
 
 key: نه
   decomp: *
     reasmb: فقط برای منفی بودن میگی نه؟
-    reasmb: داری یکم منفی بهش نگاه میکنی.
     reasmb: چرا که نه؟
     reasmb: چرا "نه"؟
 
-key: من 2
-  decomp: $ * من *
-    reasmb: بیا بیشتر بحث کنیم که چرا تو (2) .
-    reasmb: Earlier you said your (2) .
-    reasmb: But your (2) .
-    reasmb: Does that have anything to do with the fact that your (2) ?
-  decomp: * my * @family *
-    reasmb: Tell me more about your family.
-    reasmb: Who else in your family (4) ?
-    reasmb: Your (3) ?
-    reasmb: What else comes to mind when you think of your (3) ?
-  decomp: * my *
-    reasmb: Your (2) ?
-    reasmb: Why do you say your (2) ?
-    reasmb: Does that suggest anything else which belongs to you ?
-    reasmb: Is it important that your (2) ?
+key: دارم 2
+  decomp: * دارم *
+    reasmb: چرا (1) داری ؟
+    reasmb: تو اطرافیان کسی (1) داره ؟
+    reasmb: از چه زمانی (1) داری ؟
+key: داری 2
+  decomp: * داری *
+    reasmb: از کجا میگوبی من (1) دارم ؟
+    reasmb: تو هم (1) داری ؟
+    reasmb: دوست داری که من (1) داشته باشم ؟
+key: دارن 2
+  decomp: *دارن *
+    reasmb: چگونه متوجه شدی (1) دارن ؟
+    reasmb: واقعا (1) دارن ؟
 
-key: تونستن
+key: میتونی
   decomp: * میتونی *
     reasmb: تو باور داری که من می تونم (2)، اینطور نیست؟
-    reasmb: goto چه
+    reasmb: تو از من چی میخوای که بتونم(2).
+    reasmb: goto چی
     reasmb: می خوای که من بتونم (2) .
     reasmb: شاید دوست داری که خودت بتونی (2).
-  decomp: * می تونم *
-    reasmb: اینکه(2) رو بتونی یا نه بیشتر به خودت بستگی دارد تا من.
+key: میتونی
+  decomp: * میتونم *
+    reasmb: اینکه بتونی یا نه بیشتر به خودت بستگی داره تا من.
     reasmb: می خوای بتونی که (2)؟
     reasmb: شاید نمی خوای که (2) .
-    reasmb: goto چه
+    reasmb: goto چی
 
-key: چه
+key: چی
   decomp: *
     reasmb: چرا میپرسی؟
     reasmb: پرسیدن این سوال برات جالبه؟
@@ -374,27 +373,27 @@ key: چون
     reasmb: به نظر نمی رسه که این دلیل چیز دیگه‌ای رو توضیح می ده؟
     reasmb: چه دلایل دیگه ای میتونن وجود داشته باشن؟
 
-key: چرا
-  decomp: * چرا نمی کنی *
-    reasmb: Do you believe I don't (2) ? 
-    reasmb: تو معتقدی که من (2) نیستم؟
-    reasmb: شاید من به موقع (2).
-    reasmb: Should you (2) yourself ?
-    reasmb: You want me to (2) ?
-    reasmb: goto what
-  decomp: * why can't i *
-    reasmb: Do you think you should be able to (2) ?
-    reasmb: Do you want to be able to (2) ?
-    reasmb: Do you believe this will help you to (2) ?
-    reasmb: Have you any idea why you can't (2) ?
-    reasmb: goto what
+key: زیرا
   decomp: *
-    reasmb: goto what
+  reasmb: goto  چون
+
+key: چرا
+ decomp: * چرا تو *
+    reasmb: نو فکر میکنی من (2) ؟
+    reasmb: goto چی
+  decomp: * چرا من نمیتونم *
+    reasmb: چرا فکر میکنی تو نمیتونی (2) ؟
+    reasmb: واقعا میخوای که بتونی (2) ؟
+    reasmb: فکر میکنی اینکه بتونی (2) بهت  کمک میکنه ؟
+    reasmb: به نظرت چرا نمیتونی (2) ؟
+    reasmb: goto چی
+  decomp: *
+    reasmb: goto چی
 
 key: همه 2
   decomp: * @همه *
     reasmb: واقعا، (2)؟
-    reasmb: مطمئناً (2) نه .
+    reasmb: مطمئنا این طور نیست که (2)
     reasmb: میتونی به شخص خاصی فکر کنی؟
     reasmb: مثلاً کی؟
     reasmb: داری به یه آدم خاص فکر می کنی؟
@@ -402,16 +401,6 @@ key: همه 2
     reasmb: شاید یه آدم خاص؟
     reasmb: یه آدم خاص تو ذهنته مگه نه؟
     reasmb: فکر میکنی راجب کی صحبت میکنی؟
-
-key: everybody 2
-  decomp: *
-    reasmb: goto everyone
-key: nobody 2
-  decomp: *
-    reasmb: goto everyone
-key: noone 2
-  decomp: *
-    reasmb: goto everyone
 
 key: همیشه 1
   decomp: *
@@ -422,7 +411,7 @@ key: همیشه 1
 
 key: مثل 10
   decomp: *
-    reasmb: از چه طریق؟
+    reasmb: از چه نظر؟
     reasmb: چه شباهتی می بینی؟
     reasmb: این شباهت چه چیزی رو بهت نشون می‌ده؟
     reasmb: چه ارتباطات دیگه‌ای می بینی؟
@@ -430,7 +419,7 @@ key: مثل 10
     reasmb: فکر می کنی چه ارتباطی وجود داره؟
     reasmb: واقعاً ممکنه ارتباطی اینجا وجود داشته باشه؟
     reasmb: چطور؟
-key: مشابه 10
-  decomp: * @شدن * مشابه*
+key: شبیه 10
+  decomp: * @شدن * شبیه*
     reasmb: goto مثل
    

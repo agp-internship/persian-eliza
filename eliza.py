@@ -2,7 +2,8 @@ import logging
 import random
 import re
 
-# Fix Python2/Python3 incompatibility
+from collections import namedtuple
+
 try:
     input = raw_input
 except NameError:
@@ -191,8 +192,6 @@ class Eliza:
         text = re.sub(r'\s* می \s*', ' می', text)
         text = re.sub(r'\s* نمی \s*', ' نمی', text)
 
-        # if not re.match(r'\s*هستی\s*', text):
-        #     text = re.sub(r'\s*ی\S*$', ' هستی', text)
 
         text = re.sub(r'\s*\.+\s*', ' . ', text)
         text = re.sub(r'\s*,+\s*', ' , ', text)
@@ -240,16 +239,13 @@ class Eliza:
 
     def run(self):
         print(self.initial())
-
         while True:
             sent = input()
 
             output = self.respond(sent)
             if output is None:
                 break
-
             print(output)
-
         print(self.final())
 
 
